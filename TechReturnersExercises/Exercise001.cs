@@ -36,8 +36,9 @@ namespace TechReturners.Exercises
 
         public static double AddVat(double originalPrice, double vatRate) 
         {
-            // Add your code here!
-            throw new NotImplementedException();
+            double vat = (vatRate + 100) / 100;
+            double totalprice = originalPrice * vat;
+            return Math.Round(totalprice,2);
         }
 
         public static String Reverse(String sentence) 
