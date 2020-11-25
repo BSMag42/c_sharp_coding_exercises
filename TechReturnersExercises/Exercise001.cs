@@ -43,8 +43,9 @@ namespace TechReturners.Exercises
 
         public static String Reverse(String sentence) 
         {
-            // Add your code here!
-            throw new NotImplementedException();
+            char[] arrsentence = sentence.ToCharArray();
+            Array.Reverse(arrsentence);
+            return new string(arrsentence);
         }
 
         public static int CountLinuxUsers(List<User> users) 
