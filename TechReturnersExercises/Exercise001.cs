@@ -7,8 +7,14 @@ namespace TechReturners.Exercises
     {
         public static String CapitalizeWord(String word) 
         {
-            // Add your code here!
-            throw new NotImplementedException();
+            if (word.Length > 0)
+            {
+                return char.ToUpper(word[0]) + word.Substring(1);
+            }
+            else
+            {
+                return "";
+            }
         }
 
         public static String GenerateInitials(String firstName, String lastName) 
