@@ -11,8 +11,7 @@ namespace TechReturners.Exercises
 
         public static bool CanWatchFilm(Person person, int ageLimit) 
         {
-            // Add your code here!
-            throw new NotImplementedException();
+            return person.Age >= ageLimit;
         }
     }
 }
