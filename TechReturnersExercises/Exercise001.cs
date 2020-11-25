@@ -19,8 +19,19 @@ namespace TechReturners.Exercises
 
         public static String GenerateInitials(String firstName, String lastName) 
         {
-            // Add your code here!
-            throw new NotImplementedException();
+            var initials = "";
+            if(firstName.Length > 0)
+            {
+                char first = firstName[0];
+                initials = first.ToString() + ".";
+            }
+            if (lastName.Length > 0)
+            {
+                char last = lastName[0];
+                initials += last.ToString();
+            }
+
+            return initials.ToUpper();
         }
 
         public static double AddVat(double originalPrice, double vatRate) 
