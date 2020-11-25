@@ -50,8 +50,16 @@ namespace TechReturners.Exercises
 
         public static int CountLinuxUsers(List<User> users) 
         {
-            // Add your code here!
-            throw new NotImplementedException();
+            int oscount = 0;
+            for(int i=0; i<users.Count; i++)
+            {
+                var user = users[i];
+                if(user.Type == "Linux")
+                {
+                    oscount += 1;
+                }
+            }
+            return oscount;
         }
     }
 }

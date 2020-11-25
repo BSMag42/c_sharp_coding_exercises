@@ -6,8 +6,7 @@ namespace TechReturners.Exercises
     {
         public static bool IsFromManchester( Person person ) 
         {
-            // Add your code here!
-            throw new NotImplementedException();
+            return person.Location == "Manchester";
         }
 
         public static bool CanWatchFilm(Person person, int ageLimit) 
